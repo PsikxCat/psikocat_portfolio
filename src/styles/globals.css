@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* # todo */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --color-base: #f3f3f3;
+    --color-muted: #c7d2fe;
+    --color-accent: #f13024;
+    --color-accent2: #4fcd22;
+    --color-accent3: #25d5cf;
+
+    background-color: #878787;
+    color : var(--color-base);
+    font-size: 16px;
+    font-weight: 400;
+    }
+
+  body {
+    width: 100%;
+    min-height: 100svh;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    scrollbar-width: none;
+  }
+  /* ! Pendiente tema scrollbar */ <-------------------
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  h2 {
+    font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
+  }
+
+  p {
+    font-size: clamp(0.9rem, 0.5rem + 1.3vw, 1.3rem);
+  }
+}
+
+@layer components {
+  .main-wrapper {
+    @apply w-[100%] min-h-[100svh] h-auto pt-[calc(30px+2vw)] pb-[30px] px-[20px] min-[801px]:px-[40px]
+  }
+
+  .page-wrapper {
+    min-height: calc(100svh - calc(30px + 2vw) - 30px);
+    height: auto;
+    background:
+      linear-gradient(90deg, #000000 19px, transparent 1%) center,
+      linear-gradient(0deg, #000000 19px, transparent 1%) center, #ffffff87;
+    background-size: 20px 20px;
+    overflow-y: hidden;
+  }
+
+  .page {
+    width: 100%;
+    min-height: calc(100svh - calc(30px + 2vw) - 30px);
+    height: auto;
+    padding: 0 clamp(2px, 1px + 1vw, 20px);
+  }
+
+  .box {
+    width: 100px;
+    height: 200px;
+    border: 1px solid #fff;
+    background-color: darkgreen;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  /* # margenes */
+  .frame {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100svh;
+    pointer-events: none;
+
+    .frame_fillTop,
+    .frame_fillBottom {
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      background-color: black;
+      opacity: 0.9;
+    }
+
+    .frame_fillTop {
+      top: 0;
+      height: calc(30px + 2vw);
+    }
+
+    .frame_fillBottom {
+      bottom: 0;
+      height: 30px;
+    }
+
+    .frame_t1,
+    .frame_b1 {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--color-base);
+      opacity: 0.5;
+    }
+
+    .frame_t1 {
+      top: calc(30px + 2vw);
+    }
+
+    .frame_b1 {
+      bottom: 30px;
+    }
+
+    .frame_l,
+    .frame_r {
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: var(--color-base);
+      opacity: 0.5;
+    }
+
+    .frame_l {
+      left: 40px;
+    }
+
+    .frame_r {
+      right: 40px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .frame_fillTop,
+      .frame_fillBottom {
+        left: 20px;
+        right: 20px;
+      }
+
+      .frame_l {
+        left: 20px;
+      }
+
+      .frame_r {
+        right: 20px;
+      }
+    }
+  }
+}
