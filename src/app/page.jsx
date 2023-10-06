@@ -20,8 +20,8 @@ export default function RootPage() {
   }, [router])
 
   return (
-    <div className='flex-center absolute inset-0 bg-black'>
-      <main className='flex-center flex-col text-center mb-[15vh]'>
+    <div className='flex_center absolute inset-0 bg-black'>
+      <main className='flex_center flex-col text-center mb-[15vh]'>
         <motion.div className='absolute inset-0'
           variants={fadeIn('down', 1.3, 0, 1)}
           initial='hidden'
@@ -36,7 +36,7 @@ export default function RootPage() {
           initial='hidden'
           animate='visible'
         >
-          Richard Arevalo
+          richard arévalo
         </motion.h2>
 
         <motion.p
@@ -45,7 +45,7 @@ export default function RootPage() {
           initial='hidden'
           animate='visible'
         >
-          Portfolio
+          portfolio
         </motion.p>
       </main>
     </div>

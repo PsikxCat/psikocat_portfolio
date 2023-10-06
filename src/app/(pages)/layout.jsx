@@ -1,18 +1,12 @@
-import '@/styles/globals.css'
+import './styles.css'
+import { SiteFrame } from '@/components'
 
 export default function PagesLayout({ children }) {
   return (
     <>
-      <div className='frame'>
-        <div className='frame_fillTop'/>
-        <div className='frame_fillBottom'/>
-        <div className='frame_t1'/>
-        <div className='frame_b1'/>
-        <div className='frame_l'/>
-        <div className='frame_r'/>
-      </div>
+      <SiteFrame />
 
-      <section className='page-wrapper'>
+      <section className='page-wrapper flex_center'>
         {children}
       </section>
     </>

@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .page-wrapper {
+    min-height: calc(100svh - calc(30px + 2vw) - 30px);
+    height: auto;
+    background:
+      linear-gradient(90deg, #050505 19px, transparent 1%) center,
+      linear-gradient(0deg, #050505 19px, transparent 1%) center, var(--color-base);
+    background-size: 20px 20px;
+    overflow-y: hidden;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 2000px;
+    min-height: calc(100svh - calc(30px + 2vw) - 30px);
+    height: auto;
+    padding: 0 clamp(2px, 1px + 1vw, 20px);
+  }
+
+    /* # margenes */
+    .frame {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100svh;
+      user-select: none;
+      pointer-events: none;
+
+      .frame_fillTop,
+      .frame_fillBottom {
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        background-color: #0b0b0b;
+        opacity: 0.9;
+      }
+
+      .frame_fillTop {
+        top: 0;
+        height: calc(30px + 2vw);
+      }
+
+      .frame_fillBottom {
+        bottom: 0;
+        height: 30px;
+      }
+
+      .frame_t1,
+      .frame_b1,
+      .frame_b2, {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-base);
+        opacity: 0.5;
+      }
+
+      .frame_t1 {
+        top: calc(30px + 2vw);
+      }
+
+      .frame_b1 {
+        bottom: 30px;
+      }
+
+      .frame_b2 {
+        bottom: 20px;
+      }
+
+      .frame_l,
+      .frame_r {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: var(--color-base);
+        opacity: 0.5;
+      }
+
+      .frame_l {
+        left: 40px;
+      }
+
+      .frame_r {
+        right: 40px;
+      }
+
+      .frame_fill_l,
+      .frame_fill_r {
+        position: absolute;
+        bottom: 20px;
+        width: 40px;
+        height: 10px;
+        background-color: var(--color-base);
+        opacity: 0.8;
+      }
+
+      .frame_fill_l {
+        left: 0;
+      }
+
+      .frame_fill_r {
+        right: 0;
+      }
+
+      .frame_text {
+        position: fixed;
+        right: 0;
+        bottom: 60px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-base);
+        opacity: 0.05;
+        letter-spacing: 3px;
+        line-height: 0.8;
+
+        user-select: none;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        z-index: 20;
+      }
+
+      @media screen and (max-width: 800px) {
+        .frame_fillTop,
+        .frame_fillBottom {
+          left: 20px;
+          right: 20px;
+        }
+
+        .frame_l {
+          left: 20px;
+        }
+
+        .frame_r {
+          right: 20px;
+        }
+
+        .frame_fill_l,
+        .frame_fill_r {
+          width: 20px;
+        }
+
+        .frame_text {
+          opacity: 0;
+        }
+      }
+    }
+
+    /* # header */
+    .header {
+      .header_title {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: calc(30px + 2vw);
+        display: flex;
+        align-items: flex-end;
+        padding: 0 clamp(2px, 1px + 1.5vw, 200px);
+        margin: 0 40px;
+        font-size: clamp(0.9rem, 1rem + 1.3vw, 5rem);
+        line-height: 0.9;
+
+        z-index: 20;
+        user-select: none;
+        pointer-events: none;
+      }
+
+      .header_icons {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+        height: calc(30px + 2vw);
+        padding: 5px clamp(2px, 1px + 1.5vw, 200px);
+        margin: 0 40px;
+        color: var(--color-base);
+        font-size: clamp(15px, 2px + 1vw, 4.5rem);
+
+        cursor: pointer;
+        z-index: 20;
+      }
+
+      @media screen and (max-width: 800px) {
+        .header_title {
+          margin: 0 20px;
+        }
+
+        .header_icons {
+          margin: 0 20px;
+        }
+      }
+    }
+}

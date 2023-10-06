@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --color-base: #f3f3f3;
+    --color-muted: #c7d2fe;
+    --color-accent: #f13024;
+
+    background-color: #878787;
+    color : var(--color-base);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  body {
+    @apply w-[100%] min-h-[100svh] h-auto bg-[#0b0b0b] !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-stone-950
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
+  }
+
+  p {
+    font-size: clamp(0.9rem, 0.5rem + 1.3vw, 1.3rem);
+  }
+}
+
+@layer components {
+  .main_wrapper {
+    @apply w-[100%] min-h-[100svh] h-auto pt-[calc(30px+2vw)] pb-[30px] px-[20px] min-[801px]:px-[40px]
+  }
+
+  .flex_center {
+    @apply flex items-center justify-center;
+  }
+}
