@@ -13,17 +13,18 @@
 
   :root {
     --color-base: #f3f3f3;
+    --color-base-dark: #0a0a0a;
     --color-muted: #c7d2fe;
     --color-accent: #f13024;
 
-    background-color: #878787;
+    background-color: var(--color-base);
     color : var(--color-base);
     font-size: 16px;
     font-weight: 400;
   }
 
   body {
-    @apply w-[100%] min-h-[100svh] h-auto bg-[#0b0b0b] !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-stone-950
+    @apply w-[100%] min-h-[100svh] h-auto bg-[var(--color-base-dark)] !scrollbar-hide
   }
 
   h2 {

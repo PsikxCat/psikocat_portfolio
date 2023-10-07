@@ -9,6 +9,11 @@ module.exports = {
     extend: {
       textColor: {
         accent: 'var(--color-accent)',
+      },
+      backgroundColor: {
+        base: 'var(--color-base)',
+        dark: 'var(--color-base-dark)',
+        accent: 'var(--color-accent)',
       }
     },
   },

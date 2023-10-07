@@ -2,3 +2,4 @@ export { default as ParticlesContainer } from './ParticlesContainer/ParticlesCon
 export { default as Header } from './Header/Header'
 export { default as SiteFrame } from './SiteFrame/SiteFrame'
 export { default as Socials } from './Socials/Socials'
+export { default as Transition } from './Transition/Transition'

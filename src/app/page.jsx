@@ -20,9 +20,10 @@ export default function RootPage() {
   }, [router])
 
   return (
-    <div className='flex_center absolute inset-0 bg-black'>
+    <div className='flex_center absolute inset-0 bg-dark'>
       <main className='flex_center flex-col text-center mb-[15vh]'>
-        <motion.div className='absolute inset-0'
+        <motion.div
+          className='absolute inset-0'
           variants={fadeIn('down', 1.3, 0, 1)}
           initial='hidden'
           animate='visible'
@@ -31,7 +32,7 @@ export default function RootPage() {
         </motion.div>
 
         <motion.h2
-          className='font-semibold leading-none'
+          className='font-semibold leading-none text-3xl'
           variants={fadeIn('down', 0, 0, 1)}
           initial='hidden'
           animate='visible'
