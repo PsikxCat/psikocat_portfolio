@@ -14,9 +14,8 @@ export default function SiteFrame() {
         <div className='frame_fill_l'></div>
         <div className='frame_fill_r'></div>
 
-        <span className='frame_text'>
-          portfolio
-        </span>
+        <span className='frame_text_left'>psikocat</span>
+        <span className='frame_text_right'>portfolio</span>
       </div>
 
       <Header />

@@ -6,33 +6,20 @@
   *,
   *::before,
   *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    @apply box-border m-0 p-0;
   }
 
   :root {
+    @apply bg-[color:var(--color-base)] text-[color:var(--color-base)] text-base font-normal;
     --color-base: #f3f3f3;
     --color-base-dark: #0a0a0a;
-    --color-muted: #c7d2fe;
+    --color-muted: #aeaeae;
     --color-accent: #f13024;
-
-    background-color: var(--color-base);
-    color : var(--color-base);
-    font-size: 16px;
-    font-weight: 400;
+    --color-accent-2: #ffa500;
   }
 
   body {
     @apply w-[100%] min-h-[100svh] h-auto bg-[var(--color-base-dark)] !scrollbar-hide
-  }
-
-  h2 {
-    font-size: clamp(1.5rem, 1rem + 2vw, 2rem);
-  }
-
-  p {
-    font-size: clamp(0.9rem, 0.5rem + 1.3vw, 1.3rem);
   }
 }
 
@@ -43,5 +30,9 @@
 
   .flex_center {
     @apply flex items-center justify-center;
+  }
+
+  .flex_center_column {
+    @apply flex flex-col items-center justify-center;
   }
 }

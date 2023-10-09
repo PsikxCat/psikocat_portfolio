@@ -17,7 +17,7 @@ export default function PagesLayout({ children }) {
 
       <SiteFrame />
 
-      <section className='page-wrapper flex_center'>
+      <section className='page_wrapper flex_center'>
         {children}
       </section>
     </>

@@ -21,7 +21,7 @@ export default function Header() {
         <div className='h-0 absolute bottom-0 -right-[23%]'>
           <motion.span
             className='absolute right-0 font-extralight'
-            variants={fadeIn('left', 1, 50, 2)}
+            variants={fadeIn('left', 2, 50, 2)}
             initial='hidden'
             animate='visible'
           >
@@ -29,6 +29,7 @@ export default function Header() {
           </motion.span>
         </div>
       </section>
+
       {/* socials */}
       <section className='header_icons space-x-3'>
         <Socials />

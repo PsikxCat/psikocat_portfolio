@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        smd: '666px',
+        md: '900px',
+        lg: '1200px',
+        xl: '1500px',
+        '2xl': '2000px',
+      },
       textColor: {
         accent: 'var(--color-accent)',
       },
