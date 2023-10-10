@@ -14,12 +14,19 @@ module.exports = {
         xl: '1500px',
         '2xl': '2000px',
       },
+
       textColor: {
         accent: 'var(--color-accent)',
+        'accent-2': 'var(--color-accent-2)',
       },
       backgroundColor: {
         base: 'var(--color-base)',
         dark: 'var(--color-base-dark)',
+        darker: 'var(--color-base-darker)',
+        accent: 'var(--color-accent)',
+      },
+      borderColor: {
+        base: 'var(--color-base)',
         accent: 'var(--color-accent)',
       }
     },

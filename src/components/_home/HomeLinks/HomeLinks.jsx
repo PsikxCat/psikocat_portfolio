@@ -8,13 +8,13 @@ import { fadeIn } from '@/utils'
 export default function HomeLinks() {
   return (
     <section className='nav hidden lg:flex'>
-      <div className='h2 flex_center_column items-end p-3 gap-y-6 tracking-tight'>
+      <div className='h2 flex_center_column items-end p-3 gap-y-6 tracking-tight font-[200]'>
         <motion.div
           variants={fadeIn('right', 1, 80, 1.5)}
           initial='hidden'
           animate='visible'
         >
-          <Link className='nav_item' href='/about'>sobre mi</Link>
+          <Link className='nav_item' href='/work'>portfolio</Link>
         </motion.div>
 
         <motion.div
@@ -22,7 +22,7 @@ export default function HomeLinks() {
           initial='hidden'
           animate='visible'
         >
-          <Link className='nav_item' href='/work'>portfolio</Link>
+          <Link className='nav_item' href='/about'>sobre mi</Link>
         </motion.div>
 
         <motion.div

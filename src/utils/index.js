@@ -1,3 +1,12 @@
+import { HiHome, HiUser, HiRectangleGroup, HiEnvelope } from 'react-icons/hi2'
+
+export const navLinks = [
+  { name: 'home', path: '/home', icon: <HiHome/> },
+  { name: 'portfolio', path: '/work', icon: <HiRectangleGroup /> },
+  { name: 'sobre mi', path: '/about', icon: <HiUser /> },
+  { name: 'contacto', path: '/contact', icon: <HiEnvelope /> },
+]
+
 export const fadeIn = (direction, delay, distance = 80, duration = 1.5) => {
   return {
     hidden: {

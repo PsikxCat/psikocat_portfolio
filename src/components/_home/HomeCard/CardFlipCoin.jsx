@@ -24,6 +24,7 @@ export default function CardFlipCoin() {
             alt="richard's photo"
             width={350}
             height={350}
+            priority
           />
         </motion.div>
 
