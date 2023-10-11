@@ -10,3 +10,5 @@ export { default as Tab } from './Navbar/Tab'
 export { default as HomeCard } from './_home/HomeCard/HomeCard'
 export { default as CardFlipCoin } from './_home/HomeCard/CardFlipCoin'
 export { default as HomeLinks } from './_home/HomeLinks/HomeLinks'
+
+export { default as ProjectsSlider } from './_work/ProjectsSlider/ProjectsSlider'

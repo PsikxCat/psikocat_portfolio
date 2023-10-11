@@ -14,10 +14,10 @@ module.exports = {
         xl: '1500px',
         '2xl': '2000px',
       },
-
       textColor: {
         accent: 'var(--color-accent)',
         'accent-2': 'var(--color-accent-2)',
+        dark: 'var(--color-base-dark)',
       },
       backgroundColor: {
         base: 'var(--color-base)',

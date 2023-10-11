@@ -16,7 +16,7 @@
   }
 
   .tab_active {
-    @apply text-accent font-semibold border-t border-accent bg-darker;
+    @apply text-accent border-t border-accent bg-darker;
     border-top: 1px solid var(--color-accent);
     background-color: var(--color-base-darker);
   }
@@ -28,6 +28,7 @@
       border-top: none;
       border-left: 1px solid var(--color-base);
       transition: all 0.1s ease-in-out;
+      width: 30px;
 
       &:hover {
         @apply opacity-100 bg-darker;

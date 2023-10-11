@@ -14,7 +14,7 @@ export default function HomeLinks() {
           initial='hidden'
           animate='visible'
         >
-          <Link className='nav_item' href='/work'>portfolio</Link>
+          <Link className='text_shadow' href='/work'>portfolio</Link>
         </motion.div>
 
         <motion.div
@@ -22,7 +22,7 @@ export default function HomeLinks() {
           initial='hidden'
           animate='visible'
         >
-          <Link className='nav_item' href='/about'>sobre mi</Link>
+          <Link className='text_shadow' href='/about'>sobre mi</Link>
         </motion.div>
 
         <motion.div
@@ -30,7 +30,7 @@ export default function HomeLinks() {
           initial='hidden'
           animate='visible'
         >
-          <Link className='nav_item' href='/contact'>contacto</Link>
+          <Link className='text_shadow' href='/contact'>contacto</Link>
         </motion.div>
       </div>
     </section>

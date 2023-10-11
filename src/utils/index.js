@@ -7,6 +7,59 @@ export const navLinks = [
   { name: 'contacto', path: '/contact', icon: <HiEnvelope /> },
 ]
 
+export const projectsData = {
+  slides: [
+    {
+      images: [
+        {
+          name: 'project x',
+          image: '/images/thumb1.jpg',
+          link: 'https://www.google.com',
+        },
+        {
+          name: 'project x',
+          image: '/images/thumb2.jpg',
+          link: 'https://www.google.com',
+        },
+        {
+          name: 'project x',
+          image: '/images/thumb3.jpg',
+          link: 'https://www.google.com',
+        },
+        {
+          name: 'project x',
+          image: '/images/thumb4.jpg',
+          link: 'https://www.google.com',
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          name: 'project x',
+          image: '/images/thumb5.jpg',
+          link: 'https://www.google.com',
+        },
+        {
+          name: 'project x',
+          image: '/images/thumb6.jpg',
+          link: 'https://www.google.com',
+        },
+        {
+          name: 'project x',
+          image: '/images/thumb7.jpg',
+          link: 'https://www.google.com',
+        },
+        {
+          name: 'project x',
+          image: '/images/thumb8.jpg',
+          link: 'https://www.google.com',
+        },
+      ],
+    },
+  ],
+}
+
 export const fadeIn = (direction, delay, distance = 80, duration = 1.5) => {
   return {
     hidden: {

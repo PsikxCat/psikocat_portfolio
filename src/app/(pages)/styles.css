@@ -26,8 +26,9 @@
   }
 
   .page {
-    @apply w-full max-w-[2500px] min-h-[calc(100svh_-_calc(30px_+_2vw)_-_30px)] h-auto  !scrollbar-none;
+    @apply w-full max-w-[2500px] min-h-[calc(100svh_-_calc(30px_+_2vw)_-_30px)] h-auto !scrollbar-none;
     padding: 0 clamp(2px, 1px + 1vw, 20px);
+    overflow-y: hidden;
   }
 
   .h2 {
@@ -47,6 +48,7 @@
       ) 1 100%;
     background: #ffffff07;
     box-shadow: 7px 7px 21px #ffffff1f;
+    backdrop-filter: blur(1px);
   }
 
   .nav {
@@ -56,12 +58,12 @@
       var(--color-accent-2),
       var(--color-accent)
       ) 1 100%;
+  }
 
-    .nav_item {
-      transition: 700ms ease-in-out;
-    }
+  .text_shadow {
+    transition: 700ms ease-in-out;
 
-    .nav_item:hover {
+    &:hover {
       text-shadow:
         0 0 7px #fff9,
         0 0 10px var(--color-accent-2),
@@ -69,8 +71,7 @@
         0 0 18px var(--color-accent),
         0 0 22px var(--color-accent);
       transition: 125ms ease-in-out;
-      transform: translate(-5px);
-
+      /* transform: translate(-5px); */
     }
   }
 }
