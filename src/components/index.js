@@ -12,3 +12,7 @@ export { default as CardFlipCoin } from './_home/HomeCard/CardFlipCoin'
 export { default as HomeLinks } from './_home/HomeLinks/HomeLinks'
 
 export { default as ProjectsSlider } from './_work/ProjectsSlider/ProjectsSlider'
+export { default as ProjectSliderCard } from './_work/ProjectsSlider/ProjectsSliderCard'
+export { default as ProjectCard } from './_work/_details/ProjectCard'
+
+export { default as Technologies } from './_about/Technologies'

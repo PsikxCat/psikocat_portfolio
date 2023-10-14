@@ -2,14 +2,14 @@
 
 import { useRouter } from 'next/navigation'
 
+import { Technologies } from '@/components'
+
 export default function AboutPage() {
   const router = useRouter()
 
   return (
     <div className="page flex_center flex flex-col gap-1 p-10">
-      <section>
-        <h1 className="text-4xl font-bold">About Page</h1>
-      </section>
+      <Technologies />
 
       <section>
         <button

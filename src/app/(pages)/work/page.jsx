@@ -1,6 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { BsArrowRight } from 'react-icons/bs'
 
 import { ProjectsSlider } from '@/components'
 import { fadeIn } from '@/utils'
@@ -12,8 +14,8 @@ export default function WorkPage() {
         <section className='flex_center_column lg:justify-between xl:flex-row gap-[3vh] w-full lg:pb-0'>
           {/* title */}
           <motion.section
-            className='smd:card_styles lg:w-[50%] p-9 xl:mb-24 flex_center_column lg:items-start gap-[2vh]'
-            variants={fadeIn('down', 1, 80, 1)}
+            className='card_styles lg:w-[50%] p-9 xl:mb-24 flex_center_column lg:items-start gap-[2vh]'
+            variants={fadeIn('down', 0.5, 80, 1.5)}
             initial='hidden'
             animate='visible'
           >
@@ -29,7 +31,7 @@ export default function WorkPage() {
           {/* works */}
           <motion.section
             className='w-[95%] lg:w-[60%] flex_center-column p-5'
-            variants={fadeIn('up', 1, 80, 1)}
+            variants={fadeIn('up', 0.5, 80, 1.5)}
             initial='hidden'
             animate='visible'
             >
@@ -40,7 +42,11 @@ export default function WorkPage() {
 
             {/* link to details page */}
             <div className='w-full flex_center pt-3'>
-              <p className='cursor-pointer text_shadow text-accent-2'>Detalles &gt;&gt;</p>
+              <Link href='/work/details'>
+                <p className='cursor-pointer flex_center text_shadow text-accent-2 group'>
+                  Ver más&nbsp;<BsArrowRight className='text-accent group-hover:translate-x-2 duration-300'/>
+                </p>
+              </Link>
             </div>
           </motion.section>
         </section>

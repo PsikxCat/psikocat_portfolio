@@ -28,7 +28,7 @@
   .page {
     @apply w-full max-w-[2500px] min-h-[calc(100svh_-_calc(30px_+_2vw)_-_30px)] h-auto !scrollbar-none;
     padding: 0 clamp(2px, 1px + 1vw, 20px);
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .h2 {
@@ -71,7 +71,26 @@
         0 0 18px var(--color-accent),
         0 0 22px var(--color-accent);
       transition: 125ms ease-in-out;
-      /* transform: translate(-5px); */
+    }
+  }
+
+  .work__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(1, minmax(250px, 350px));
+    }
+
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: repeat(2, minmax(250px, 350px));
+    }
+
+    @media screen and (min-width: 1800px) {
+      grid-template-columns: repeat(4, minmax(250px, 350px));
     }
   }
 }

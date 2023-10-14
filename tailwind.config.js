@@ -17,6 +17,7 @@ module.exports = {
       textColor: {
         accent: 'var(--color-accent)',
         'accent-2': 'var(--color-accent-2)',
+        muted: 'var(--color-muted)',
         dark: 'var(--color-base-dark)',
       },
       backgroundColor: {

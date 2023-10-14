@@ -1,20 +1,32 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Navigation } from 'swiper/modules'
-import { BsArrowRight } from 'react-icons/bs'
+import { Pagination, Navigation, EffectCards } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import 'swiper/css/effect-cards'
 
 import './ProjectsSlider.css'
 import { projectsData } from '@/utils'
+import { ProjectSliderCard } from '@/components'
 
 export default function ProjectsSlider() {
   const [screenSize, setScreenSize] = useState(0)
+
+  const chunkProjectsArr = (array, size) => {
+    const chunkedArr = []
+    let index = 0
+
+    while (index < array.length) {
+      chunkedArr.push(array.slice(index, size + index))
+      index += size
+    }
+
+    return chunkedArr
+  }
 
   useEffect(() => {
     setScreenSize(window.innerWidth)
@@ -32,60 +44,35 @@ export default function ProjectsSlider() {
     }
   }, [])
 
-  return (<>
-  { screenSize > 1500
-    // Swiper grid 2x2
-    ? <Swiper
-        className='h-auto w-auto max-w-[900px]'
-        slidesPerView={1}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={{
-          enabled: true,
-          clickable: true,
-        }}
-        modules={[Pagination, Navigation]}
-      >
-        { projectsData.slides.map((slide, index) => (
+  return (
+    <>
+    {screenSize > 1500
+      ? <Swiper
+          className='h-auto w-auto max-w-[900px]'
+          slidesPerView={1}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={{
+            enabled: true,
+            clickable: true,
+          }}
+          modules={[Pagination, Navigation]}
+        >
+          {chunkProjectsArr(projectsData, 4).map((chunk, index) => (
             <SwiperSlide key={index}>
-              <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer hover:bg-white/5 rounded-lg transition-all duration-300'>
-                {slide.images.map((image, index) => (
-                  <section className='relative flex_center rounded-lg group overflow-hidden' key={index}>
-                    {/* name tag */}
-                    <p className='absolute top-0 right-0 tracking-1 px-2 text-white bg-accent opacity-80 rounded-bl-lg'>
-                      {image.name}
-                    </p>
-
-                    {/* img */}
-                    <Image className='object-cover w-full h-full' src={image.image} alt='project' width={500} height={300}/>
-
-                    {/* gradient */}
-                    <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[var(--color-base-dark)] to-[var(--color-accent)] opacity-0 group-hover:opacity-80 transition-all duration-300'/>
-
-                    {/* link to live */}
-                    <section className='flex_center absolute bottom-0 translate-y-full group-hover:-translate-y-8 lg:group-hover:-translate-y-12 transition-all duration-300 flex-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                      <h4 className='delay-100'>
-                        LIVE
-                      </h4>
-
-                      <h4 className='delay-150 translate-y-[500%] group-hover:translate-y-0 transition-all duration-300'>
-                        PROJECT
-                      </h4>
-
-                      <span >
-                        <BsArrowRight />
-                      </span>
-                    </section>
+              <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer bg-dark rounded-lg transition-all duration-300'>
+                {chunk.map(({ id, imagesUrl, title }) => (
+                  <section className='relative flex_center rounded-lg group overflow-hidden' key={id}>
+                    <ProjectSliderCard title={title} imagesUrl={imagesUrl} />
                   </section>
                 ))}
               </div>
             </SwiperSlide>
-        ))}
-      </Swiper>
-    // Swiper individual slides
-    : <Swiper
+          ))}
+        </Swiper>
+      : <Swiper
         className='h-auto w-auto max-w-[400px]'
         slidesPerView={1}
         spaceBetween={10}
@@ -96,44 +83,18 @@ export default function ProjectsSlider() {
           enabled: true,
           clickable: true,
         }}
-        modules={[Pagination, Navigation]}
+        effect={'cards'}
+        modules={[Pagination, Navigation, EffectCards]}
       >
-        { projectsData.slides.map((slide, index) => (
-          <div className='flex_center' key={index}>
-            {slide.images.map((image, index) => (
-              <SwiperSlide key={index}>
-                <section className='relative flex_center cursor-pointer rounded-lg group overflow-hidden'>
-                  {/* name tag */}
-                  <p className='absolute top-0 right-0 tracking-1 px-2 text-white bg-accent opacity-80 rounded-bl-lg'>
-                    {image.name}
-                  </p>
-
-                  {/* img */}
-                  <Image className='object-cover w-full h-full' src={image.image} alt='project' width={500} height={300}/>
-
-                  {/* gradient */}
-                  <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[var(--color-base-dark)] to-[var(--color-accent)] opacity-0 group-hover:opacity-80 transition-all duration-300'/>
-
-                  {/* content */}
-                  <section className='flex_center absolute bottom-0 translate-y-full group-hover:-translate-y-8 lg:group-hover:-translate-y-12 transition-all duration-300 flex-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                    <h4 className='delay-100'>
-                      LIVE
-                    </h4>
-
-                    <h4 className='delay-150 translate-y-[500%] group-hover:translate-y-0 transition-all duration-300'>
-                      PROJECT
-                    </h4>
-
-                    <span >
-                      <BsArrowRight />
-                    </span>
-                  </section>
-                </section>
-              </SwiperSlide>
-            ))}
-          </div>
+        {projectsData.map(({ id, imagesUrl, title }) => (
+          <SwiperSlide key={id}>
+            <section className='relative flex_center cursor-pointer rounded-lg group overflow-hidden'>
+              <ProjectSliderCard title={title} imagesUrl={imagesUrl} />
+            </section>
+          </SwiperSlide>
         ))}
       </Swiper>
-  }
-  </>)
+    }
+    </>
+  )
 }

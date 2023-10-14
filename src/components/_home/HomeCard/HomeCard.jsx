@@ -1,8 +1,18 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 import { CardFlipCoin } from '@/components'
+import { fadeIn } from '@/utils'
 
 export default function HomeCard() {
   return (
-    <section className='relative smd:card_styles min-h-[300px] smd:min-w-[50px] flex_center_column lg:justify-start p-8 lg:w-[60%]'>
+    <motion.section
+      className='relative card_styles min-h-[300px] smd:min-w-[50px] flex_center_column lg:justify-start p-8 lg:w-[60%]'
+      variants={fadeIn('down', 0.5, 80, 2)}
+      initial='hidden'
+      animate='visible'
+    >
       {/* texto */}
       <div className='z-20'>
         <h1 className='lg:text-start mb-6 h1'>
@@ -15,7 +25,13 @@ export default function HomeCard() {
       </div>
 
       {/* imagen */}
-      <CardFlipCoin />
-    </section>
+      <motion.div
+        variants={fadeIn('up', 2.5, 0, 4)}
+        initial='hidden'
+        animate='visible'
+      >
+        <CardFlipCoin />
+      </motion.div>
+    </motion.section>
   )
 }
