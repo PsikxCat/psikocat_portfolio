@@ -13,6 +13,9 @@ export { default as HomeLinks } from './_home/HomeLinks/HomeLinks'
 
 export { default as ProjectsSlider } from './_work/ProjectsSlider/ProjectsSlider'
 export { default as ProjectSliderCard } from './_work/ProjectsSlider/ProjectsSliderCard'
-export { default as ProjectCard } from './_work/_details/ProjectCard'
+export { default as ProjectCard } from './_work/_details/ProjectCard/ProjectCard'
+export { default as Overlay } from './_work/_details/Modal/Overlay'
+export { default as Modal } from './_work/_details/Modal/Modal'
+export { default as ModalSlider } from './_work/_details/Modal/ModalSlider'
 
 export { default as Technologies } from './_about/Technologies'

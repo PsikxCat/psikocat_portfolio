@@ -48,7 +48,7 @@ export default function ProjectsSlider() {
     <>
     {screenSize > 1500
       ? <Swiper
-          className='h-auto w-auto max-w-[900px]'
+          className='h-auto w-auto max-w-[700px]'
           slidesPerView={1}
           spaceBetween={10}
           pagination={{
@@ -73,7 +73,7 @@ export default function ProjectsSlider() {
           ))}
         </Swiper>
       : <Swiper
-        className='h-auto w-auto max-w-[400px]'
+        className='h-auto w-auto max-w-[350px]'
         slidesPerView={1}
         spaceBetween={10}
         pagination={{

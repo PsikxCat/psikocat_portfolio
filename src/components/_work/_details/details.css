@@ -1,16 +1,7 @@
 .details__ {
-  /* &card_wrapper:nth-child(odd) {
-    align-self: flex-start;
-  }
-
-  &card_wrapper:nth-child(even) {
-    align-self: flex-end;
-  } */
-
-  &card_wrapper {
-    /* border: 1px solid red; */
+  &card_wrapper,
+  &modal_wrapper {
     position: relative;
-
     margin: 5px;
     width: 100%;
     &::before {
@@ -20,7 +11,21 @@
     }
   }
 
-  &card {
+  &modal_wrapper {
+    display: flex;
+    margin: 5px;
+    max-height: 90vh;
+    width: 80%;
+    max-width: 1000px;
+
+    &::before {
+      padding-bottom: calc((3 / 5) * 100%);
+    }
+
+  }
+
+  &card,
+  &modal {
     position: absolute;
     left: 0;
     top: 0;
@@ -28,7 +33,6 @@
     height: 100%;
 
     box-shadow: 2px 1px 12px #ffffff1f;
-    cursor: pointer;
 
     ::-webkit-scrollbar {
       width: 4px;
@@ -38,6 +42,53 @@
       width: 4px;
       background: var(--color-accent-2);
       border-radius: 10px;
+    }
+  }
+
+  &modal {
+    display: flex;
+    cursor: default;
+    background-color: #000000c3;
+    backdrop-filter: blur(2px);
+    box-shadow: 7px 5px 10px #c1c1c126;
+  }
+
+  &card_tab_r,
+  &card_tab_b {
+    cursor: pointer;
+    width: 30px;
+    height: 60px;
+    color: var(--color-accent);
+    box-shadow: 2px 1px 12px #ffffff1f;
+    border-radius: 0 30px 30px 0;
+    background-color: #151515ad;
+  }
+
+  &card_tab_b {
+    width: 60px;
+    height: 30px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  &overlay {
+    z-index: 200;
+
+    border: 1px solid green;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* # media queries */
+@media screen and (max-width: 900px) {
+  .details__card {
+    cursor: default;
+
+    &_tab_r {
+      display: none;
     }
   }
 }

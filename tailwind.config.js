@@ -25,6 +25,7 @@ module.exports = {
         dark: 'var(--color-base-dark)',
         darker: 'var(--color-base-darker)',
         accent: 'var(--color-accent)',
+        'accent-2': 'var(--color-accent-2)',
       },
       borderColor: {
         base: 'var(--color-base)',

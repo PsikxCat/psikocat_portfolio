@@ -92,9 +92,12 @@ export const projectsData = [
       'https://i.ibb.co/p4WxyQv/netflix2.png'
     ],
     title: 'Netflix Clone',
+    liveUrl: 'https://www.google.com/',
+    codeUrl: 'https://www.google.com/',
     description:
       'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
-    // tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Prismic'],
+    extended_description:
+      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
     tags: [technologiesData[7], technologiesData[1], technologiesData[4], technologiesData[5]]
   },
   {
@@ -106,8 +109,12 @@ export const projectsData = [
       'https://i.ibb.co/p4WxyQv/netflix2.png'
     ],
     title: 'Netflix Clone',
+    liveUrl: 'https://www.google.com/',
+    codeUrl: 'https://www.google.com/',
     description:
       'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+    extended_description:
+      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
     tags: [technologiesData[7], technologiesData[1], technologiesData[5]]
   },
   {
@@ -119,8 +126,12 @@ export const projectsData = [
       'https://i.ibb.co/p4WxyQv/netflix2.png'
     ],
     title: 'Netflix Clone',
+    liveUrl: 'https://www.google.com/',
+    codeUrl: 'https://www.google.com/',
     description:
       'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+    extended_description:
+      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
     tags: [technologiesData[7], technologiesData[1]]
   },
   {
@@ -132,8 +143,12 @@ export const projectsData = [
       'https://i.ibb.co/p4WxyQv/netflix2.png'
     ],
     title: 'Netflix Clone',
+    liveUrl: 'https://www.google.com/',
+    codeUrl: 'https://www.google.com/',
     description:
       'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+    extended_description:
+      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
     tags: [technologiesData[8], technologiesData[2], technologiesData[5], technologiesData[6]]
   },
   {
@@ -145,8 +160,12 @@ export const projectsData = [
       'https://i.ibb.co/p4WxyQv/netflix2.png'
     ],
     title: 'Netflix Clone',
+    liveUrl: 'https://www.google.com/',
+    codeUrl: 'https://www.google.com/',
     description:
       'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+    extended_description:
+      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
     tags: [technologiesData[8], technologiesData[2], technologiesData[5], technologiesData[6]]
   },
   {
@@ -158,8 +177,12 @@ export const projectsData = [
       'https://i.ibb.co/p4WxyQv/netflix2.png'
     ],
     title: 'Netflix Clone',
+    liveUrl: 'https://www.google.com/',
+    codeUrl: 'https://www.google.com/',
     description:
       'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+    extended_description:
+      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
     tags: [technologiesData[8], technologiesData[2], technologiesData[5], technologiesData[6]]
   },
   {
@@ -171,8 +194,12 @@ export const projectsData = [
       'https://i.ibb.co/p4WxyQv/netflix2.png'
     ],
     title: 'Netflix Clone',
+    liveUrl: 'https://www.google.com/',
+    codeUrl: 'https://www.google.com/',
     description:
       'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+    extended_description:
+      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
     tags: [technologiesData[8], technologiesData[2], technologiesData[5], technologiesData[6]]
   },
   {
@@ -184,8 +211,12 @@ export const projectsData = [
       'https://i.ibb.co/p4WxyQv/netflix2.png'
     ],
     title: 'Netflix Clone',
+    liveUrl: 'https://www.google.com/',
+    codeUrl: 'https://www.google.com/',
     description:
       'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+    extended_description:
+      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
     tags: [technologiesData[8], technologiesData[2], technologiesData[5], technologiesData[6]]
   },
 
