@@ -43,8 +43,8 @@ export default function ProjectCard({ data }) {
           animate='visible'
         >
           {/* image */}
-          <motion.section
-            className='w-[100%] h-[45%] overflow-hidden bg-dark object-fill' variants={fadeIn('up', 0.5, 40, 1)}
+          <section
+            className='w-[100%] h-[45%] overflow-hidden bg-dark object-fill'
           >
             <Image
               className='w-full h-full rounded-tr-[20px] object-cover object-left-top'
@@ -52,41 +52,62 @@ export default function ProjectCard({ data }) {
               width={200}
               height={200}
             />
-          </motion.section>
+          </section>
 
           {/* info */}
-          <motion.section
-            className='w-[100%] h-[55%] flex flex-col justify-between gap-y-2 p-3 pt-2' variants={fadeIn('up', 0.5, 40, 1)}
-          >
+          <section className='w-[100%] h-[55%] flex flex-col justify-between gap-y-2 p-3 pt-2'>
             {/* tags */}
-            <div className='w-full h-[20px] flex gap-2 px-1'>
+            <motion.div
+              className='w-full h-[10%] flex gap-2 px-1'
+              variants={fadeIn('right', 1, 50, 0.5)}
+            >
               {tags.map((tag, index) => (
-                <span key={index} className='flex_center text-xs text-[10px] font-semibold leading-none tracking-tighter px-2 rounded-[50px]' style={{ backgroundColor: tag.color }}>
+                <span key={index}
+                  className='flex_center h-[17px] text-xs text-[9px] font-semibold leading-none pt-[2px] uppercase tracking-tigh px-2 rounded-[50px]'
+                  style={{ backgroundColor: tag.color }}
+                >
                   {tag.name}
                 </span>
               ))}
-            </div>
+            </motion.div>
 
-            {/* title & description */}
-            <div className='font-bold uppercase tracking-tigh text-accent px-1 pt-1'>{title}</div>
-            <div className='leading-tight overflow-y-scroll bg-zinc-500/10 px-[8px] py-2 rounded-[12px]'>{description}</div>
-          </motion.section>
+            {/* title */}
+            <motion.div
+              className='h-[15%] font-bold uppercase tracking-tigh text-accent px-1 pt-1'
+              variants={fadeIn('right', 1.3, 50, 0.5)}
+            >
+              {title}
+            </motion.div>
+
+            {/* description */}
+            <motion.div
+              className='h-[75%] leading-tight overflow-y-scroll bg-zinc-500/10 px-[8px] py-2 rounded-[12px]'
+              variants={fadeIn('right', 1.6, 30, 1)}
+            >
+              {description}
+            </motion.div>
+          </section>
 
           {/* rigth tab */}
-          <section className='absolute -right-[31px] top-[40px] flex_center justify-evenly h-[30px] w-[30px]'>
+          <motion.section
+            className='absolute -right-[31px] top-[40px] flex_center justify-evenly h-[30px] w-[30px]'
+            variants={fadeIn('right', 2.5, 5, 1)}
+          >
             <div className='details__card_tab_r flex_center hover:text-accent-2' onClick={openOverlay}>
               <TbArrowBigRightLines className='w-[20px] h-[20px]' />
             </div>
-          </section>
+          </motion.section>
+
           {/* below tabs */}
-          <section className='absolute -bottom-[31px] flex_center justify-evenly h-[30px] w-full'>
-            <div className='details__card_tab_b flex_center hover:text-accent-2'>
-              <Link href={liveUrl} target='_blank'>
+          <section className='absolute -bottom-[31px] flex_center justify-evenly h-[30px] w-full'
+          >
+            <div className='details__card_tab_b flex_center'>
+              <Link className='cursor-pointer hover:text-accent-2' href={liveUrl} target='_blank'>
                 <TbWorldWww className='w-[20px] h-[20px]' />
               </Link>
             </div>
-            <div className='details__card_tab_b flex_center hover:text-accent-2'>
-              <Link href={codeUrl} target='_blank'>
+            <div className='details__card_tab_b flex_center'>
+              <Link className='cursor-pointer hover:text-accent-2' href={codeUrl} target='_blank'>
                 <TbCode className='w-[20px] h-[20px]' />
               </Link>
             </div>
@@ -94,7 +115,7 @@ export default function ProjectCard({ data }) {
         </motion.div>
       </article>
 
-      {/* modal only on 900 and above */}
+      {/* // # modal only on 900 and above # // */}
       {screenSize >= 900 && (
         <AnimatePresence key={id}>
           {isOverlayOpen && (

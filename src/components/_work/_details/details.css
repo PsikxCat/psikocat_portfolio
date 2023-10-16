@@ -55,7 +55,6 @@
 
   &card_tab_r,
   &card_tab_b {
-    cursor: pointer;
     width: 30px;
     height: 60px;
     color: var(--color-accent);
