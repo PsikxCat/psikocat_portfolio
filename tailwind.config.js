@@ -18,6 +18,7 @@ module.exports = {
         accent: 'var(--color-accent)',
         'accent-2': 'var(--color-accent-2)',
         muted: 'var(--color-muted)',
+        base: 'var(--color-base)',
         dark: 'var(--color-base-dark)',
       },
       backgroundColor: {
@@ -26,10 +27,12 @@ module.exports = {
         darker: 'var(--color-base-darker)',
         accent: 'var(--color-accent)',
         'accent-2': 'var(--color-accent-2)',
+        muted: 'var(--color-muted)',
       },
       borderColor: {
         base: 'var(--color-base)',
         accent: 'var(--color-accent)',
+        'accent-2': 'var(--color-accent-2)',
       }
     },
   },

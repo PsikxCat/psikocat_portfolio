@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { TbWorldWww, TbCode, TbArrowBigRightLines } from 'react-icons/tb'
 import Image from 'next/image'
@@ -13,23 +13,8 @@ import { fadeIn } from '@/utils'
 export default function ProjectCard({ data }) {
   const { id, imagesUrl, title, description, tags, liveUrl, codeUrl } = data
   const [isOverlayOpen, setIsOverlayOpen] = useState(false)
-  const [screenSize, setScreenSize] = useState(0)
 
-  useEffect(() => {
-    setScreenSize(window.innerWidth)
-
-    window.addEventListener('resize', () => {
-      setScreenSize(window.innerWidth)
-    })
-
-    return () => {
-      window.removeEventListener('resize', () => {
-        setScreenSize(window.innerWidth)
-      })
-    }
-  }, [])
-
-  const openOverlay = () => screenSize >= 900 && setIsOverlayOpen(true)
+  const openOverlay = () => setIsOverlayOpen(true)
   const closeOverlay = () => setIsOverlayOpen(false)
 
   return (
@@ -63,7 +48,7 @@ export default function ProjectCard({ data }) {
             >
               {tags.map((tag, index) => (
                 <span key={index}
-                  className='flex_center h-[17px] text-xs text-[9px] font-semibold leading-none pt-[2px] uppercase tracking-tigh px-2 rounded-[50px]'
+                  className='flex_center h-[15px] text-[9px] font-semibold leading-none pt-[2px] uppercase tracking-tigh px-2 rounded-[50px]'
                   style={{ backgroundColor: tag.color }}
                 >
                   {tag.name}
@@ -116,7 +101,7 @@ export default function ProjectCard({ data }) {
       </article>
 
       {/* // # modal only on 900 and above # // */}
-      {screenSize >= 900 && (
+      <div className='absolute hidden md:block'>
         <AnimatePresence key={id}>
           {isOverlayOpen && (
             <Overlay key={id} closeOverlay={closeOverlay}>
@@ -124,7 +109,7 @@ export default function ProjectCard({ data }) {
             </Overlay>
           )}
         </AnimatePresence>
-      )}
+      </div>
     </>
   )
 }
