@@ -1,10 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { BsArrowRight } from 'react-icons/bs'
 
 import { createAccount } from '@/utils/apiUtils'
-import { validateForm } from '@/utils'
+import { validateForm, fadeIn } from '@/utils'
 
 export default function ContactPage() {
   const [error, setError] = useState([])
@@ -45,11 +46,23 @@ export default function ContactPage() {
   return (
     <div className="page flex_center">
       <section className='flex_center_column gap-y-1 gap-x-5 lg:flex-row justify-evenly p-3 lg:w-[90%] xl:-[80%] pb-[5vh] md:pb-[7svh] lg:pb-0'>
-        <h1 className='h1 mb-2 lg:mb-5 p-5'>Hablemos<span className="text-accent">.</span></h1>
+        <motion.h1
+          className='h1 mb-2 lg:mb-5 p-5'
+          variants={fadeIn('down', 0.5, 80, 0.5)}
+          initial='hidden'
+          animate='visible'
+        >
+          Hablemos<span className="text-accent">.</span>
+        </motion.h1>
 
         {/* formulario */}
-        <form className='flex_center_column gap-y-6 md:pr-6 text-base min-w-[250px] max-w-[600px]'
-          onSubmit={(e) => handleSubmit(e)} >
+        <motion.form
+          className='flex_center_column gap-y-6 md:pr-6 text-base min-w-[250px] max-w-[600px]'
+          onSubmit={(e) => handleSubmit(e)}
+          variants={fadeIn('up', 0.5, 80, 0.5)}
+          initial='hidden'
+          animate='visible'
+          >
           <div className='flex max-[900px]:flex-col gap-6 w-full'>
             {/* nombre */}
             <input
@@ -103,7 +116,7 @@ export default function ContactPage() {
             {error.length > 0 && <span className='text-accent font-semibold text-sm px-5'>{error[0]}</span>}
             {success && <span className='text-accent-2 font-bold text-sm px-5'>Mensaje enviado!</span>}
           </div>
-        </form>
+        </motion.form>
       </section>
     </div>
   )

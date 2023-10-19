@@ -75,10 +75,10 @@ export default function ProjectCard({ data }) {
 
           {/* rigth tab */}
           <motion.section
-            className='absolute -right-[31px] top-[40px] flex_center justify-evenly h-[30px] w-[30px]'
+            className='absolute -right-[31px] top-[40px] flex_center h-[30px] w-[30px]'
             variants={fadeIn('right', 2.5, 5, 1)}
           >
-            <div className='details__card_tab_r flex_center hover:text-accent-2' onClick={openOverlay}>
+            <div className='details__card_tab_r flex_center hover:text-accent-2 cursor-pointer' onClick={openOverlay}>
               <TbArrowBigRightLines className='w-[20px] h-[20px]' />
             </div>
           </motion.section>
@@ -100,7 +100,7 @@ export default function ProjectCard({ data }) {
         </motion.div>
       </article>
 
-      {/* // # modal only on 900 and above # // */}
+      {/* modal only on 900 and above */}
       <div className='absolute hidden md:block'>
         <AnimatePresence key={id}>
           {isOverlayOpen && (

@@ -9,7 +9,7 @@ export default function HomeCard() {
   return (
     <motion.section
       className='relative card_styles min-h-[300px] smd:min-w-[50px] flex_center_column lg:justify-start p-8 lg:w-[60%]'
-      variants={fadeIn('down', 0.5, 80, 2)}
+      variants={fadeIn('down', 0.5, 80, 1)}
       initial='hidden'
       animate='visible'
     >
@@ -26,7 +26,7 @@ export default function HomeCard() {
 
       {/* imagen */}
       <motion.div
-        variants={fadeIn('up', 2.5, 0, 4)}
+        variants={fadeIn('up', 2.5, 0, 2)}
         initial='hidden'
         animate='visible'
       >

@@ -11,15 +11,21 @@ export default function ProjectsSliderCard({ title, imagesUrl, liveUrl }) {
         {title}
       </span>
 
-      {/* img */}
-      <Image className='object-cover w-full h-full' src={imagesUrl[1]} alt='project' width={500} height={300}/>
+      {/* imagen | (h-0 pb-[60%] mantiene relacion de aspecto 3:5) */}
+      <div className='w-full h-0 pb-[60%]'>
+        <Image
+          className='object-cover'
+          src={imagesUrl[1]} alt='project'
+          width={500}
+          height={300}/>
+      </div>
 
       {/* gradient */}
       <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[var(--color-base-dark)] to-[var(--color-accent)] opacity-0 group-hover:opacity-80 transition-all duration-300'/>
 
       {/* content */}
       <section className='group text_shadow font-semibold absolute bottom-0 translate-y-full group-hover:-translate-y-20 lg:group-hover:-translate-y-25 transition-all duration-300'>
-        <Link className='flex_center gap-x-2 text-[13px] tracking-[0.2em]' href={liveUrl} target='_blank'>
+        <Link className='cursor-pointer flex_center gap-x-2 text-[13px] tracking-[0.2em]' href={liveUrl} target='_blank'>
           <h4 className='delay-100'>LIVE</h4>
           <h4 className='delay-150 translate-y-[500%] group-hover:translate-y-0 transition-all duration-300'>PROJECT</h4>
           <span className='text-accent'><BsArrowRight /></span>

@@ -27,11 +27,12 @@ export default function ProjectsSlider() {
 
   return (
     <>
-    <div className='hidden xl:block'>
+    <div className='max-lg:hidden'>
       <Swiper
         className='h-auto w-auto max-w-[700px]'
         slidesPerView={1}
         spaceBetween={10}
+        grabCursor={true}
         pagination={{
           clickable: true,
         }}
@@ -43,7 +44,7 @@ export default function ProjectsSlider() {
       >
         {chunkProjectsArr(projectsData, 4).map((chunk, index) => (
           <SwiperSlide key={index}>
-            <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer bg-dark rounded-lg transition-all duration-300'>
+            <div className='grid grid-cols-2 grid-rows-2 gap-4 bg-dark rounded-lg transition-all duration-300'>
               {chunk.map(({ id, imagesUrl, title, liveUrl }) => (
                 <section className='relative flex_center rounded-lg group overflow-hidden' key={id}>
                   <ProjectSliderCard title={title} imagesUrl={imagesUrl} liveUrl={liveUrl} />
@@ -55,11 +56,12 @@ export default function ProjectsSlider() {
       </Swiper>
     </div>
 
-    <div className='xl:hidden'>
+    <div className='lg:hidden'>
       <Swiper
         className='h-auto w-auto max-w-[350px]'
         slidesPerView={1}
         spaceBetween={10}
+        grabCursor={true}
         pagination={{
           clickable: true,
         }}

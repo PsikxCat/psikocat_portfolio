@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { BsArrowRight } from 'react-icons/bs'
 
 import { ProjectsSlider } from '@/components'
 import { fadeIn } from '@/utils'
@@ -10,12 +9,12 @@ import { fadeIn } from '@/utils'
 export default function WorkPage() {
   return (
     <div className="page flex_center">
-      <div className='flex_center_column p-3 w-full lg:w-[90%] xl:-[80%] md:pb-[10svh] lg:pb-0'>
-        <section className='flex_center_column lg:justify-between xl:flex-row gap-[3vh] w-full lg:pb-0'>
+      <div className='flex p-3 w-full lg:w-[90%] xl:-[80%] md:pb-[10svh] lg:pb-0'>
+        <section className='flex_center_column lg:justify-between lg:flex-row gap-[3vh] w-full lg:pb-0'>
           {/* title */}
           <motion.section
-            className='card_styles lg:w-[50%] p-9 xl:mb-24 flex_center_column lg:items-start gap-[2vh]'
-            variants={fadeIn('down', 0.5, 80, 1.5)}
+            className='card_styles lg:w-[50%] p-9 md:mb-10 xl:mb-24 flex_center_column lg:items-start gap-[2vh]'
+            variants={fadeIn('down', 0.5, 80, 0.5)}
             initial='hidden'
             animate='visible'
           >
@@ -31,7 +30,7 @@ export default function WorkPage() {
           {/* works */}
           <motion.section
             className='w-[95%] lg:w-[60%] flex_center-column p-5'
-            variants={fadeIn('up', 0.5, 80, 1.5)}
+            variants={fadeIn('up', 0.5, 80, 0.5)}
             initial='hidden'
             animate='visible'
             >
@@ -43,8 +42,8 @@ export default function WorkPage() {
             {/* link to details page */}
             <div className='w-full flex_center pt-3'>
               <Link href='/work/details'>
-                <p className='cursor-pointer flex_center text_shadow text-accent-2 group'>
-                  Ver más&nbsp;<BsArrowRight className='text-accent group-hover:translate-x-2 duration-300'/>
+                <p className='cursor-pointer flex_center font-medium text_shadow text-accent-2'>
+                  Ver Detalles
                 </p>
               </Link>
             </div>
