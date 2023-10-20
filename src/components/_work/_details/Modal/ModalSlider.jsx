@@ -34,6 +34,7 @@ export default function ModalSlider({ imagesUrl }) {
               src={imageUrl}
               width={800}
               height={600}
+              unoptimized={true}
             />
           </motion.section>
         </SwiperSlide>
