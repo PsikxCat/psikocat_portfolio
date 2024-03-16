@@ -2,11 +2,20 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [
-      'icongr.am',
-      'i.ibb.co',
-      'img.icons8.com'
-    ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'icongr.am'
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co'
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.icons8.com'
+      }
+    ]
   },
 }
 

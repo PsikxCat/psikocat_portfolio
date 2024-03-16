@@ -56,6 +56,12 @@ export const techsData = {
     imageUrl: '/icons/nextjs.svg',
     color: '#CCCCCC55'
   },
+  prisma: {
+    id: 16,
+    name: 'Prisma',
+    imageUrl: '/icons/prisma.svg',
+    color: '#CCCCCC55'
+  },
   mongodb: {
     id: 9,
     name: 'MongoDB',

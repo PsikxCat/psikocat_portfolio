@@ -32,7 +32,39 @@
   }
 
   body {
-    @apply w-[100%] min-h-[100svh] h-auto bg-[var(--color-base-dark)] !scrollbar-hide;
+    @apply w-[100%] min-h-[100svh] h-auto bg-[var(--color-base-dark)];
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-accent);
+      border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: black;
+      border-radius: 20px;
+    }
+  }
+
+  article {
+    &::-webkit-scrollbar {
+      width: 2px;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--color-accent);
+      border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: black;
+      border-radius: 20px;
+    }
   }
 }
 

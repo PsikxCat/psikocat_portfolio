@@ -22,15 +22,21 @@
   }
 
   textarea {
-    @apply h-[180px] resize-none border-white/20 ;
+    /* @apply h-[180px] resize-none border-white/20 scrollbar scrollbar-thumb-red-600 scrollbar-track-red-950 ; */
+    @apply h-[180px] resize-none border-white/20  ;
 
     &::-webkit-scrollbar {
-      width: 4px;
+      width: 6px;
       background: transparent;
     }
 
     &::-webkit-scrollbar-thumb {
       background: var(--color-accent);
+      border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: black;
       border-radius: 20px;
     }
   }

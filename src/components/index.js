@@ -19,3 +19,4 @@ export { default as Modal } from './_work/_details/Modal/Modal'
 export { default as ModalSlider } from './_work/_details/Modal/ModalSlider'
 
 export { default as Technologies } from './_about/Technologies'
+export { default as Chatbot } from './_about/Chatbot'
