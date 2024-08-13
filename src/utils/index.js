@@ -86,10 +86,10 @@ export const techsData = {
     imageUrl: '/icons/firebase.svg',
     color: '#FFCA2855'
   },
-  figma: {
+  vite: {
     id: 13,
-    name: 'Figma',
-    imageUrl: '/icons/figma.svg',
+    name: 'Vite',
+    imageUrl: '/icons/vitejs.svg',
     color: '#F24E1E55'
   },
   photoshop: {
@@ -110,139 +110,147 @@ export const projectsData = [
   {
     id: 1,
     imagesUrl: [
-      'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
-      'https://i.ibb.co/w64ybrc/thumb.png',
-      'https://i.ibb.co/whJj0ww/netflix1.png',
-      'https://i.ibb.co/p4WxyQv/netflix2.png'
+      // 'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoware_video.webp?alt=media&token=9daa8859-8a64-4097-8ef0-791961f52fe0',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoware_thumb.webp?alt=media&token=69223e81-00ea-409f-aa52-7977e7e742ff',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoware_1.webp?alt=media&token=ded8acb0-93bc-46a3-af22-db9a780debfb',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoware_2.webp?alt=media&token=13cd9c80-6c15-4938-a4fa-42183b4a543a',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoware_3.webp?alt=media&token=f92d8fd6-c073-43a2-8db6-5d11f541011f',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoware_4.webp?alt=media&token=f74bb367-9b6f-450b-a35b-01af6f841f58',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoware_5.webp?alt=media&token=503667ae-0197-42f8-b2b7-118fa5b4ab39'
     ],
-    title: 'Netflix Clone',
-    liveUrl: 'https://www.google.com/',
-    codeUrl: 'https://www.google.com/',
+    title: 'PsikoWare',
+    liveUrl: 'https://psikoware-ecommerce.vercel.app/',
+    codeUrl: 'https://github.com/PsikxCat/psikoware_ecommerce',
     description:
-      'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+      'PsikoWare es una plataforma de comercio electrónico especializada en componentes para PC. Desarrollada con Next, ofrece una experiencia de compra fluida con un sistema de autenticación robusto y un panel de administración para la gestión de productos y pedidos.',
     extended_description:
-      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
-    tags: [techsData.react, techsData.next, techsData.framermotion, techsData.tailwind]
+      'PsikoWare E-commerce es una tienda en línea especializada en componentes para PC. Construida sobre Next.js y React con TypeScript, ofrece una experiencia de compra fluida y segura. La autenticación de usuarios se maneja a través de NextAuth, mientras que MongoDB sirve como base de datos robusta y escalable. La integración con MercadoPago proporciona una pasarela de pago confiable. El diseño responsivo se logra con Tailwind CSS, y se utiliza Chart.js para visualizaciones en el panel de administración. Firebase se emplea para el almacenamiento de imágenes, mejorando la gestión de contenido multimedia.',
+    tags: [techsData.next, techsData.typescript, techsData.tailwind, techsData.mongodb]
   },
   {
     id: 2,
     imagesUrl: [
-      'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
-      'https://i.ibb.co/w64ybrc/thumb.png',
-      'https://i.ibb.co/whJj0ww/netflix1.png',
-      'https://i.ibb.co/p4WxyQv/netflix2.png'
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikogames_video.webp?alt=media&token=e69dc07c-43b2-4b31-892d-6f49f6309095',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikogames_thumb.webp?alt=media&token=cbeb8aa5-a682-4fe7-b2e3-fe13ffec1991',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikogames_1.webp?alt=media&token=af16903a-9f0f-4970-a6d4-c71d34d899fd',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikogames_2.webp?alt=media&token=2e90bb3d-a1c2-4613-93a9-5c23a12f8193',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikogames_3.webp?alt=media&token=a53dddb3-6f74-4b2b-979b-2beb2136a678',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikogames_4.webp?alt=media&token=37171c71-6d83-41ab-8d42-7fcca8ee31d8                                 '
     ],
-    title: 'Netflix Clone',
-    liveUrl: 'https://www.google.com/',
-    codeUrl: 'https://www.google.com/',
+    title: 'PsikoGames',
+    liveUrl: 'https://psikogames.vercel.app/',
+    codeUrl: 'https://github.com/PsikxCat/psikogames',
     description:
-      'It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+      'PsikoGames es una plataforma de juegos web desarrollada con Next.js que ofrece una experiencia de juego interactiva con un sistema de autenticación robusto. La plataforma incluye tres juegos clásicos: Wordle, Minesweeper y Memory.',
     extended_description:
-      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
-    tags: [techsData.css, techsData.sass, techsData.javascript]
+      'Psiko Games es una plataforma de juegos web que ofrece una experiencia de juego inmersiva con un sistema de autenticación robusto. Desarrollada con Next.js y React, utiliza TypeScript para un código más seguro y mantenible. La autenticación se maneja con NextAuth, ofreciendo múltiples proveedores. Prisma ORM se emplea para interactuar eficientemente con una base de datos PostgreSQL. La interfaz de usuario, construida con Tailwind CSS y componentes de Radix UI, es responsiva y atractiva. El proyecto también incorpora Framer Motion para animaciones fluidas y Zod para validación de datos.',
+    tags: [techsData.next, techsData.typescript, techsData.prisma, techsData.framermotion]
   },
   {
     id: 3,
     imagesUrl: [
-      'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
-      'https://i.ibb.co/w64ybrc/thumb.png',
-      'https://i.ibb.co/whJj0ww/netflix1.png',
-      'https://i.ibb.co/p4WxyQv/netflix2.png'
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fwhatscatt_video.webp?alt=media&token=cf666180-a539-4757-81c4-a5f16aee74e8',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fwhatscatt_thumb.webp?alt=media&token=7b88025f-8a2d-45b3-9c64-25a15bf6bad4',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fwhatscatt_1.webp?alt=media&token=255980f6-1aef-4eee-b5be-3abb97170002',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fwhatscatt_2.webp?alt=media&token=c13b7017-ba67-456e-832c-f297ec1a1b51'
     ],
-    title: 'Netflix Clone',
-    liveUrl: 'https://www.google.com/',
-    codeUrl: 'https://www.google.com/',
+    title: 'Whatscatt',
+    liveUrl: 'https://whatscatt-app.vercel.app/',
+    codeUrl: 'https://github.com/PsikxCat/whatscatt_app',
     description:
-      'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+      'WhatsCatt App es un clon de WhatsApp Web que ofrece funcionalidades de mensajería en tiempo real. Esta aplicación proporciona una experiencia de chat fluida y familiar.',
     extended_description:
-      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
-    tags: [techsData.photoshop, techsData.figma, techsData.javascript]
+      'WhatsCatt App es un clon de WhatsApp Web que ofrece funcionalidades de chat en tiempo real. Desarrollada con Next.js y React, utiliza TypeScript para un desarrollo más seguro. La autenticación se maneja a través de Clerk, proporcionando opciones seguras de inicio de sesión. Convex se utiliza como base de datos en tiempo real y para el almacenamiento de archivos, permitiendo una experiencia de chat fluida. La interfaz de usuario se construye con Tailwind CSS y componentes de Radix UI. El proyecto también incluye integración planificada con la API de Google Generative AI para funcionalidades de chat asistido por IA.',
+    tags: [techsData.next, techsData.typescript, techsData.tailwind]
   },
   {
     id: 4,
     imagesUrl: [
-      'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
-      'https://i.ibb.co/w64ybrc/thumb.png',
-      'https://i.ibb.co/whJj0ww/netflix1.png',
-      'https://i.ibb.co/p4WxyQv/netflix2.png'
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoflix_video.webp?alt=media&token=c8580fc4-5a20-4588-b630-c9e17d90c85f',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoflix_thumb.webp?alt=media&token=9e3c42fb-48fa-4135-b998-19844a44f4c2',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoflix_1.webp?alt=media&token=dc35c4cd-e97a-40e5-9385-020319c07707',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoflix_2.webp?alt=media&token=f851a471-b396-4b2f-ac35-8150a5d73e37',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoflix_3.webp?alt=media&token=931e75d2-d0dd-4a66-ab2e-71555671572a',
+      'https://firebasestorage.googleapis.com/v0/b/fir-realtime-db-test-50a0a.appspot.com/o/portfolio%2Fpsikoflix_4.webp?alt=media&token=0954d917-e44b-4c0b-9913-3d3128776db0',
     ],
-    title: 'Netflix Clone',
-    liveUrl: 'https://www.google.com/',
-    codeUrl: 'https://www.google.com/',
+    title: 'Psikoflix',
+    liveUrl: 'https://psikoflix.netlify.app/',
+    codeUrl: 'https://github.com/PsikxCat/psikoflix',
     description:
-      'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+      'PsikoFlix es un clon de la interfaz de usuario de Netflix, desarrollado con React y Vite. Utiliza la API de TMDB para mostrar información sobre películas y series, ofreciendo una experiencia similar a la plataforma de streaming original.',
     extended_description:
-      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
-    tags: [techsData.expression, techsData.mongodb, techsData.nodejs, techsData.firebase]
+      'PsikoFlix es un clon de Netflix que ofrece una experiencia de streaming similar. Desarrollado con React y TypeScript, utiliza Vite como herramienta de construcción para un desarrollo rápido. La autenticación de usuarios y el almacenamiento de datos se manejan con Firebase. La API de TMDB se utiliza para obtener información actualizada sobre películas y series. React Router maneja la navegación, mientras que React Player se emplea para la reproducción de trailers. El diseño responsivo se logra con Tailwind CSS, y se incorporan características como scrollbars personalizados para mejorar la experiencia del usuario.',
+    tags: [techsData.react, techsData.typescript, techsData.tailwind, techsData.vite]
   },
-  {
-    id: 5,
-    imagesUrl: [
-      'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
-      'https://i.ibb.co/w64ybrc/thumb.png',
-      'https://i.ibb.co/whJj0ww/netflix1.png',
-      'https://i.ibb.co/p4WxyQv/netflix2.png'
-    ],
-    title: 'Netflix Clone',
-    liveUrl: 'https://www.google.com/',
-    codeUrl: 'https://www.google.com/',
-    description:
-      'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
-    extended_description:
-      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
-    tags: [techsData.framermotion, techsData.javascript, techsData.css, techsData.sass]
-  },
-  {
-    id: 6,
-    imagesUrl: [
-      'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
-      'https://i.ibb.co/w64ybrc/thumb.png',
-      'https://i.ibb.co/whJj0ww/netflix1.png',
-      'https://i.ibb.co/p4WxyQv/netflix2.png'
-    ],
-    title: 'Netflix Clone',
-    liveUrl: 'https://www.google.com/',
-    codeUrl: 'https://www.google.com/',
-    description:
-      'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
-    extended_description:
-      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
-    tags: [techsData.typescript, techsData.javascript, techsData.css, techsData.sass]
-  },
-  {
-    id: 7,
-    imagesUrl: [
-      'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
-      'https://i.ibb.co/w64ybrc/thumb.png',
-      'https://i.ibb.co/whJj0ww/netflix1.png',
-      'https://i.ibb.co/p4WxyQv/netflix2.png'
-    ],
-    title: 'Netflix Clone',
-    liveUrl: 'https://www.google.com/',
-    codeUrl: 'https://www.google.com/',
-    description:
-      'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
-    extended_description:
-      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
-    tags: [techsData.figma, techsData.javascript, techsData.css, techsData.sass]
-  },
-  {
-    id: 8,
-    imagesUrl: [
-      'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
-      'https://i.ibb.co/w64ybrc/thumb.png',
-      'https://i.ibb.co/whJj0ww/netflix1.png',
-      'https://i.ibb.co/p4WxyQv/netflix2.png'
-    ],
-    title: 'Netflix Clone',
-    liveUrl: 'https://www.google.com/',
-    codeUrl: 'https://www.google.com/',
-    description:
-      'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
-    extended_description:
-      'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
-    tags: [techsData.express, techsData.css, techsData.react]
-  },
+  // {
+  //   id: 5,
+  //   imagesUrl: [
+  //     'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
+  //     'https://i.ibb.co/w64ybrc/thumb.png',
+  //     'https://i.ibb.co/whJj0ww/netflix1.png',
+  //     'https://i.ibb.co/p4WxyQv/netflix2.png'
+  //   ],
+  //   title: 'Netflix Clone',
+  //   liveUrl: 'https://www.google.com/',
+  //   codeUrl: 'https://www.google.com/',
+  //   description:
+  //     'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+  //   extended_description:
+  //     'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
+  //   tags: [techsData.framermotion, techsData.javascript, techsData.css, techsData.sass]
+  // },
+  // {
+  //   id: 6,
+  //   imagesUrl: [
+  //     'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
+  //     'https://i.ibb.co/w64ybrc/thumb.png',
+  //     'https://i.ibb.co/whJj0ww/netflix1.png',
+  //     'https://i.ibb.co/p4WxyQv/netflix2.png'
+  //   ],
+  //   title: 'Netflix Clone',
+  //   liveUrl: 'https://www.google.com/',
+  //   codeUrl: 'https://www.google.com/',
+  //   description:
+  //     'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+  //   extended_description:
+  //     'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
+  //   tags: [techsData.typescript, techsData.javascript, techsData.css, techsData.sass]
+  // },
+  // {
+  //   id: 7,
+  //   imagesUrl: [
+  //     'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
+  //     'https://i.ibb.co/w64ybrc/thumb.png',
+  //     'https://i.ibb.co/whJj0ww/netflix1.png',
+  //     'https://i.ibb.co/p4WxyQv/netflix2.png'
+  //   ],
+  //   title: 'Netflix Clone',
+  //   liveUrl: 'https://www.google.com/',
+  //   codeUrl: 'https://www.google.com/',
+  //   description:
+  //     'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+  //   extended_description:
+  //     'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
+  //   tags: [techsData.figma, techsData.javascript, techsData.css, techsData.sass]
+  // },
+  // {
+  //   id: 8,
+  //   imagesUrl: [
+  //     'https://i.ibb.co/0FLNxrt/netflix-clone.gif',
+  //     'https://i.ibb.co/w64ybrc/thumb.png',
+  //     'https://i.ibb.co/whJj0ww/netflix1.png',
+  //     'https://i.ibb.co/p4WxyQv/netflix2.png'
+  //   ],
+  //   title: 'Netflix Clone',
+  //   liveUrl: 'https://www.google.com/',
+  //   codeUrl: 'https://www.google.com/',
+  //   description:
+  //     'This is a Netflix clone made with React, Redux, Firebase and Styled Components. It has a login and register page, a home page with a list of movies and a movie page with a trailer. It also has a responsive design for mobile devices and tablets.',
+  //   extended_description:
+  //     'Este proyecto representa un clon de Netflix que ha sido desarrollado utilizando tecnologías tales como React, Redux, Firebase y Styled Components. En su funcionalidad, comprende una página de inicio de sesión y registro, así como una página principal que presenta un catálogo de películas. Por otra parte, proporciona una página dedicada a cada película, que incluye un reproductor de tráiler. Además, se destaca por su diseño receptivo, que se ajusta de manera óptima tanto a dispositivos móviles como a tabletas.',
+  //   tags: [techsData.express, techsData.css, techsData.react]
+  // },
 
 ]
 

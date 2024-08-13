@@ -30,7 +30,7 @@ export default function ModalSlider({ imagesUrl }) {
             variants={fadeIn('up', 0.5, 40, 1)}
           >
             <Image
-              className='h-full object-cover object-left-top'
+              className='h-full object-fill object-center'
               src={imageUrl}
               width={800}
               height={600}

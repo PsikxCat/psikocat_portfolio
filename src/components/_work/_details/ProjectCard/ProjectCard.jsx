@@ -32,7 +32,7 @@ export default function ProjectCard({ data }) {
             className='w-[100%] h-[45%] overflow-hidden bg-dark object-fill'
           >
             <Image
-              className='w-full h-full rounded-tr-[20px] object-cover object-left-top'
+              className='w-full h-full rounded-tr-[20px] object-cover object-center'
               src={imagesUrl[2]}
               width={200}
               height={200}

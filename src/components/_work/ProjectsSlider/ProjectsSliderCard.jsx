@@ -11,10 +11,10 @@ export default function ProjectsSliderCard({ title, imagesUrl, liveUrl }) {
         {title}
       </span>
 
-      {/* imagen | (h-0 pb-[60%] mantiene relacion de aspecto 3:5) */}
+      {/* imagen | (h-0 pb-[60%] mantiene relacion de aspecto 5:3) */}
       <div className='w-full h-0 pb-[60%]'>
         <Image
-          className='object-cover'
+          className='object-cover object-center'
           src={imagesUrl[1]} alt='project'
           width={500}
           height={300}/>

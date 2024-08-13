@@ -31,12 +31,12 @@ export default function Modal({ data, closeOverlay }) {
           variants={fadeIn('down', 0.5, 40, 1)}
         >
           {/* slider */}
-          <section className='h-[63%] bg-accent-2 rounded-br-[12px] overflow-hidden mb-2'>
+          <section className='h-[60%] bg-accent-2 rounded-br-[12px] overflow-hidden mb-2'>
             <ModalSlider imagesUrl={imagesUrl} />
           </section>
 
           {/* icons & links */}
-          <section className='h-[32%] flex_center_column justify-evenly'>
+          <section className='h-[40%] flex_center_column justify-evenly'>
             {/* icons */}
             <div className='flex_center w-full flex_center gap-5'>
               {tags.map((tag) => (
@@ -54,8 +54,9 @@ export default function Modal({ data, closeOverlay }) {
             </div>
             {/* links */}
             <div className='flex_center justify-evenly w-full text-[18px] tracking-wider font-semibold uppercase text-accent-2'>
-              <span className='cursor-pointer text_shadow'>Live Project</span>
-              <span className='cursor-pointer text_shadow'>View Code</span>
+            {/* // TODO: Poner los links <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
+              <span className='cursor-pointer text_shadow'>Ir a projecto</span>
+              <span className='cursor-pointer text_shadow'>Ver codigo</span>
             </div>
           </section>
         </motion.section>
