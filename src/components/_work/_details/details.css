@@ -1,6 +1,7 @@
 .details__ {
   &card_wrapper,
   &modal_wrapper {
+    /* border: 1px solid red; */
     position: relative;
     margin: 5px;
     width: 100%;
@@ -26,9 +27,7 @@
 
   &card,
   &modal {
-    position: absolute;
-    left: 0;
-    top: 0;
+    /* border: 1px solid red; */
     width: 100%;
     height: 100%;
 
@@ -96,4 +95,48 @@
 }
 
 
+/* # hover effect */
+.hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho del article */
+  height: 100%; /* Ocupa todo el alto del article */
+  overflow: hidden;
+}
 
+.hover-effect::before,
+.hover-effect::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.hover-effect::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.hover-effect::after {
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.171),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.hover-effect:hover::before,
+.hover-effect:hover::after {
+  opacity: 1;
+}

@@ -27,7 +27,7 @@ export default function ModalSlider({ imagesUrl }) {
         <SwiperSlide key={index}>
           <motion.section
             className='flex_center h-[100%] bg-dark'
-            variants={fadeIn('up', 0.5, 40, 1)}
+            variants={fadeIn('right', 0.5, 40, 0.5)}
           >
             <Image
               className='h-full object-fill object-center'

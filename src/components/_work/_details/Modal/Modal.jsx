@@ -7,15 +7,16 @@ import { IoCloseCircleOutline } from 'react-icons/io5'
 import '../details.css'
 import { ModalSlider } from '@/components'
 import { fadeIn } from '@/utils'
+import Link from 'next/link'
 
 export default function Modal({ data, closeOverlay }) {
-  const { imagesUrl, title, extended_description, tags } = data
+  const { imagesUrl, title, extended_description, tags, liveUrl, codeUrl } = data
 
   return (
     <motion.article
       className='details__modal_wrapper flex_center'
       onClick={(e) => e.stopPropagation()}
-      variants={fadeIn('down', 0, 0, 1)}
+      variants={fadeIn('down', 0, 0, 0.5)}
       initial='hidden'
       animate='visible'
       exit='hidden'
@@ -26,9 +27,8 @@ export default function Modal({ data, closeOverlay }) {
         </button>
 
         {/* slider & links */}
-        <motion.section
+        <section
           className='w-[65%]'
-          variants={fadeIn('down', 0.5, 40, 1)}
         >
           {/* slider */}
           <section className='h-[60%] bg-accent-2 rounded-br-[12px] overflow-hidden mb-2'>
@@ -52,19 +52,25 @@ export default function Modal({ data, closeOverlay }) {
                 </div>
               ))}
             </div>
+
             {/* links */}
             <div className='flex_center justify-evenly w-full text-[18px] tracking-wider font-semibold uppercase text-accent-2'>
-            {/* // TODO: Poner los links <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */}
-              <span className='cursor-pointer text_shadow'>Ir a projecto</span>
-              <span className='cursor-pointer text_shadow'>Ver codigo</span>
+            <Link href={liveUrl} target='_blank' rel='noopener noreferrer' className='cursor-pointer text_shadow'
+            >
+              Ir a projecto
+            </Link>
+            <Link href={codeUrl} target='_blank' rel='noopener noreferrer' className='cursor-pointer text_shadow'
+            >
+              Ver codigo
+            </Link>
             </div>
           </section>
-        </motion.section>
+        </section>
 
         {/* info */}
         <motion.section
           className='w-[35%] p-5 pt-0'
-          variants={fadeIn('up', 0.5, 40, 1)}
+          variants={fadeIn('left', 0.5, 40, 0.5)}
         >
           {/* title */}
           <div className='h-[15%] flex items-center p-2 uppercase tracking-wide text-accent font-bold text-[20px]'>{title}</div>
